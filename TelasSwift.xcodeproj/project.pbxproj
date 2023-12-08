@@ -16,6 +16,16 @@
 		D0F4C0302B23453E00D6960A /* TelasSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C02F2B23453E00D6960A /* TelasSwiftTests.swift */; };
 		D0F4C03A2B23453E00D6960A /* TelasSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C0392B23453E00D6960A /* TelasSwiftUITests.swift */; };
 		D0F4C03C2B23453E00D6960A /* TelasSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C03B2B23453E00D6960A /* TelasSwiftUITestsLaunchTests.swift */; };
+		D0F4C04E2B23466100D6960A /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C04D2B23466100D6960A /* BlueView.swift */; };
+		D0F4C0502B23466E00D6960A /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C04F2B23466E00D6960A /* GreenView.swift */; };
+		D0F4C0522B23467B00D6960A /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C0512B23467B00D6960A /* RedView.swift */; };
+		D0F4C0542B23469500D6960A /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C0532B23469500D6960A /* RedViewController.swift */; };
+		D0F4C0562B23469E00D6960A /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C0552B23469E00D6960A /* GreenViewController.swift */; };
+		D0F4C0582B2346AA00D6960A /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C0572B2346AA00D6960A /* BlueViewController.swift */; };
+		D0F4C05B2B234A2200D6960A /* BlueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C05A2B234A2200D6960A /* BlueCoordinator.swift */; };
+		D0F4C05D2B234A2E00D6960A /* GreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C05C2B234A2E00D6960A /* GreenCoordinator.swift */; };
+		D0F4C05F2B234A3900D6960A /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C05E2B234A3900D6960A /* RedCoordinator.swift */; };
+		D0F4C0622B234A5700D6960A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4C0612B234A5700D6960A /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		D0F4C0352B23453E00D6960A /* TelasSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelasSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F4C0392B23453E00D6960A /* TelasSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelasSwiftUITests.swift; sourceTree = "<group>"; };
 		D0F4C03B2B23453E00D6960A /* TelasSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelasSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0F4C04D2B23466100D6960A /* BlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
+		D0F4C04F2B23466E00D6960A /* GreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
+		D0F4C0512B23467B00D6960A /* RedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+		D0F4C0532B23469500D6960A /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		D0F4C0552B23469E00D6960A /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		D0F4C0572B2346AA00D6960A /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		D0F4C05A2B234A2200D6960A /* BlueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCoordinator.swift; sourceTree = "<group>"; };
+		D0F4C05C2B234A2E00D6960A /* GreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCoordinator.swift; sourceTree = "<group>"; };
+		D0F4C05E2B234A3900D6960A /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
+		D0F4C0612B234A5700D6960A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +119,8 @@
 		D0F4C0172B23452F00D6960A /* TelasSwift */ = {
 			isa = PBXGroup;
 			children = (
-				D0F4C0182B23452F00D6960A /* AppDelegate.swift */,
-				D0F4C01A2B23452F00D6960A /* SceneDelegate.swift */,
-				D0F4C01C2B23452F00D6960A /* ViewController.swift */,
-				D0F4C01E2B23452F00D6960A /* Main.storyboard */,
-				D0F4C0212B23453C00D6960A /* Assets.xcassets */,
-				D0F4C0232B23453C00D6960A /* LaunchScreen.storyboard */,
+				D0F4C0492B23463B00D6960A /* Source */,
+				D0F4C0482B23455800D6960A /* Resource */,
 				D0F4C0262B23453C00D6960A /* Info.plist */,
 			);
 			path = TelasSwift;
@@ -125,6 +141,68 @@
 				D0F4C03B2B23453E00D6960A /* TelasSwiftUITestsLaunchTests.swift */,
 			);
 			path = TelasSwiftUITests;
+			sourceTree = "<group>";
+		};
+		D0F4C0482B23455800D6960A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D0F4C0182B23452F00D6960A /* AppDelegate.swift */,
+				D0F4C01A2B23452F00D6960A /* SceneDelegate.swift */,
+				D0F4C01C2B23452F00D6960A /* ViewController.swift */,
+				D0F4C01E2B23452F00D6960A /* Main.storyboard */,
+				D0F4C0212B23453C00D6960A /* Assets.xcassets */,
+				D0F4C0232B23453C00D6960A /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D0F4C0492B23463B00D6960A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D0F4C0592B234A1400D6960A /* Coordinator */,
+				D0F4C04C2B23465400D6960A /* Red */,
+				D0F4C04B2B23464C00D6960A /* Green */,
+				D0F4C04A2B23464100D6960A /* Blue */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D0F4C04A2B23464100D6960A /* Blue */ = {
+			isa = PBXGroup;
+			children = (
+				D0F4C04D2B23466100D6960A /* BlueView.swift */,
+				D0F4C0572B2346AA00D6960A /* BlueViewController.swift */,
+			);
+			path = Blue;
+			sourceTree = "<group>";
+		};
+		D0F4C04B2B23464C00D6960A /* Green */ = {
+			isa = PBXGroup;
+			children = (
+				D0F4C04F2B23466E00D6960A /* GreenView.swift */,
+				D0F4C0552B23469E00D6960A /* GreenViewController.swift */,
+			);
+			path = Green;
+			sourceTree = "<group>";
+		};
+		D0F4C04C2B23465400D6960A /* Red */ = {
+			isa = PBXGroup;
+			children = (
+				D0F4C0512B23467B00D6960A /* RedView.swift */,
+				D0F4C0532B23469500D6960A /* RedViewController.swift */,
+			);
+			path = Red;
+			sourceTree = "<group>";
+		};
+		D0F4C0592B234A1400D6960A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D0F4C05A2B234A2200D6960A /* BlueCoordinator.swift */,
+				D0F4C05C2B234A2E00D6960A /* GreenCoordinator.swift */,
+				D0F4C05E2B234A3900D6960A /* RedCoordinator.swift */,
+				D0F4C0612B234A5700D6960A /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +336,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F4C05B2B234A2200D6960A /* BlueCoordinator.swift in Sources */,
+				D0F4C0542B23469500D6960A /* RedViewController.swift in Sources */,
+				D0F4C0622B234A5700D6960A /* Coordinator.swift in Sources */,
+				D0F4C05F2B234A3900D6960A /* RedCoordinator.swift in Sources */,
+				D0F4C04E2B23466100D6960A /* BlueView.swift in Sources */,
+				D0F4C0502B23466E00D6960A /* GreenView.swift in Sources */,
+				D0F4C0522B23467B00D6960A /* RedView.swift in Sources */,
+				D0F4C0562B23469E00D6960A /* GreenViewController.swift in Sources */,
 				D0F4C01D2B23452F00D6960A /* ViewController.swift in Sources */,
 				D0F4C0192B23452F00D6960A /* AppDelegate.swift in Sources */,
+				D0F4C0582B2346AA00D6960A /* BlueViewController.swift in Sources */,
 				D0F4C01B2B23452F00D6960A /* SceneDelegate.swift in Sources */,
+				D0F4C05D2B234A2E00D6960A /* GreenCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +537,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +565,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
