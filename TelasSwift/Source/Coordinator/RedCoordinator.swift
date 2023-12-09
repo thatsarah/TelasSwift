@@ -9,19 +9,25 @@ import UIKit
 
 class RedCoordinator: Coordinator {
     
-    var navigationController: UINavigationController
+    var navigationController = UINavigationController()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        let greenCoordinator = GreenCoordinator(navigationController: self.navigationController)
-        let viewController = BlueViewController()
-        viewController.greenScreenHandler = {
-            greenCoordinator.start()
+        let blueCoordinator = BlueCoordinator(navigationController: self.navigationController)
+        let viewController = RedViewController()
+        viewController.blueScreenHandler = {
+            blueCoordinator.start()
         }
-        
+        viewController.greenScreenHandler = {
+            self.backToGreenScreen()
+        }
         self.navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func backToGreenScreen() {
+        self.navigationController.popViewController(animated: true)
     }
 }

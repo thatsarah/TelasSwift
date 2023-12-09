@@ -12,6 +12,8 @@ class GreenViewController: UIViewController {
     let greenView = GreenView()
     
     var redScreenHandler: (() -> Void)?
+    var blueScreenHandler: (() -> Void)?
+
     
     override func loadView() {
         view = greenView
@@ -21,9 +23,16 @@ class GreenViewController: UIViewController {
         view.backgroundColor = .green
         super.viewDidLoad()
         greenView.redButton.addTarget(self, action: #selector(redScreen), for: .touchUpInside)
+        greenView.blueButton.addTarget(self, action: #selector(blueScreen), for: .touchUpInside)
+
     }
     
     @objc private func redScreen() {
         redScreenHandler?()
     }
+    
+    @objc private func blueScreen() {
+        blueScreenHandler?()
+    }
+    
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class GreenCoordinator: Coordinator {
     
-    var navigationController: UINavigationController
+    var navigationController = UINavigationController()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -21,7 +21,15 @@ class GreenCoordinator: Coordinator {
         viewController.redScreenHandler = {
             redCoordinator.start()
         }
+        viewController.blueScreenHandler = {
+            self.backToBlueScreen()
+        }
         
         self.navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func backToBlueScreen() {
+        
+        self.navigationController.popViewController(animated: true)
     }
 }

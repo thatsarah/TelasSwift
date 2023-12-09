@@ -9,7 +9,7 @@ import UIKit
 
 class BlueCoordinator: Coordinator {
     
-    var navigationController: UINavigationController
+    var navigationController = UINavigationController()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -21,7 +21,8 @@ class BlueCoordinator: Coordinator {
         viewController.greenScreenHandler = {
             greenCoordinator.start()
         }
-        
         self.navigationController.pushViewController(viewController, animated: true)
+   
     }
+    
 }

@@ -10,17 +10,48 @@ import UIKit
 class RedView: UIView {
     override init(frame: CGRect) {
         super.init(frame: CGRectZero)
-        self.backgroundColor = .blue
+        self.backgroundColor = .systemRed
         setUpVisualElements()
     }
     
-    let redLabel = UILabel()
-    let blueButton = UIButton()
-    let greenButton = UIButton()
+    var redLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.font = UIFont(name: "SFProDisplay-Light", size: 24)
+        label.text = "This is the red screen."
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
+    }()
+    
+    var blueButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Blue Screen", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.layer.cornerRadius = 12
+        button.backgroundColor = .white
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        return button
+    }()
+    
+    var greenButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Green Screen", for: .normal)
+        button.setTitleColor(.systemGreen, for: .normal)
+        button.layer.cornerRadius = 12
+        button.backgroundColor = .white
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        return button
+    }()
+    
     
     func setUpVisualElements() {
         addSubview(redLabel)
         addSubview(blueButton)
+        addSubview(greenButton)
+
         
         NSLayoutConstraint.activate([
             

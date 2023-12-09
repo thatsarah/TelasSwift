@@ -25,6 +25,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = blueViewController
         window.makeKeyAndVisible()
         self.window = window
+        
+        let navigationController = UINavigationController()
+        self.window?.rootViewController = navigationController
+        let coordinator = BlueCoordinator(navigationController: navigationController)
+        coordinator.start()
     }
     
 }

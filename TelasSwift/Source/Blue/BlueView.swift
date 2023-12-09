@@ -10,22 +10,38 @@ import UIKit
 class BlueView: UIView {
     override init(frame: CGRect) {
         super.init(frame: CGRectZero)
-        self.backgroundColor = .blue
+        self.backgroundColor = .systemBlue
         setUpVisualElements()
     }
     
-    let blueLabel = UILabel()
-    let greenButton = UIButton()
-    let redButton = UIButton()
+    var blueLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont(name: "SFProDisplay-Light", size: 60)
+        label.text = "This is the blue screen."
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
+    }()
+    
+    var greenButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Green Screen", for: .normal)
+        button.setTitleColor(.systemGreen, for: .normal)
+        button.layer.cornerRadius = 12
+        button.backgroundColor = .white
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        return button
+    }()
     
     func setUpVisualElements() {
         addSubview(blueLabel)
         addSubview(greenButton)
-        addSubview(redButton)
         
         NSLayoutConstraint.activate([
             
-            blueLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 240),
+            blueLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 320),
             blueLabel.widthAnchor.constraint(equalToConstant: 275),
             blueLabel.heightAnchor.constraint(equalToConstant: 60),
             blueLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50),
@@ -36,12 +52,6 @@ class BlueView: UIView {
             greenButton.heightAnchor.constraint(equalToConstant: 60),
             greenButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50),
             greenButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50),
-            
-            redButton.topAnchor.constraint(equalTo: greenButton.bottomAnchor, constant: 10),
-            redButton.widthAnchor.constraint(equalToConstant: 275),
-            redButton.heightAnchor.constraint(equalToConstant: 60),
-            redButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50),
-            redButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50),
             
         ])
     }
